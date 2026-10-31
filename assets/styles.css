@@ -67,3 +67,32 @@ footer small{margin-top:.15rem}
 .nav-item.active{background:var(--primary-container);color:var(--on-primary-container);font-weight:800}
 @media(min-width:760px){body{padding-top:1.5rem}.hero{min-height:780px}.feature-card{min-height:390px}.bottom-nav{left:50%;right:auto;transform:translateX(-50%);width:660px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+
+/* Material 3 alignment with Wrbycker Control Center */
+:root{
+  --m3-surface:#fbf9fd;
+  --m3-surface-container:#f3eff7;
+  --m3-surface-container-high:#ece7f0;
+  --m3-primary:#6f3df4;
+  --m3-primary-container:#e7ddff;
+  --m3-secondary:#62d9ba;
+  --m3-on-surface:#1e1b24;
+}
+body{background:var(--m3-surface)}
+.feature-card,.statement-card{box-shadow:none}
+.feature-card{background:var(--m3-surface-container);border-radius:32px}
+.character-card{background:linear-gradient(145deg,#f2ecff,#edf6fb)}
+.skills-card{background:linear-gradient(145deg,#fff0f7,#f4efff)}
+.bottom-nav{border:0;background:rgba(252,249,255,.94);box-shadow:0 12px 34px rgba(37,25,66,.14)}
+.nav-item{transition:background-color .18s ease,color .18s ease,transform .18s ease}
+.nav-item:active{transform:scale(.97)}
+.hero-actions a{box-shadow:none}
+@media(max-width:759px){
+  main{padding-inline:1rem}
+  .hero{min-height:calc(100svh - 24px);padding-top:1.2rem}
+  .orb{margin-top:1.4rem;margin-bottom:2rem}
+  .feature-card,.statement-card{border-radius:30px}
+  .section{padding:2rem 0}
+  .bottom-nav{left:10px;right:10px;border-radius:30px;padding:8px}
+}
