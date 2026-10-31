@@ -1,13 +1,32 @@
 # Wrbycker Universe
 
-Sitio independiente de entretenimiento creativo con personajes originales, skills de Folk, historias interactivas y experiencias de inteligencia artificial.
+Wrbycker Universe es el espacio creativo de la marca **wrbycker**: personajes originales, historias, skills, roleplay y experiencias de inteligencia artificial.
+
+## Arquitectura de marca
+
+- **Wrbycker Control Center** — lado técnico, herramientas, organización y control humano.
+- **Wrbycker Universe** — lado creativo, personajes, historias, skills y experiencias.
+
+La entrada principal de la marca se gestiona desde Linktree; Universe funciona como uno de los dos destinos principales del ecosistema.
+
+## Diseño
+
+Universe utiliza una base clara inspirada en Material Design 3 y comparte el mismo lenguaje de navegación y componentes que Control Center, manteniendo una personalidad más libre y expresiva.
 
 ## Publicación
 
-Proyecto estático para GitHub Pages. Archivos de la web en la raíz del repositorio (`index.html` y `assets/`).
+Sitio estático preparado para GitHub Pages desde la rama `main` y la raíz del repositorio.
 
-Este repositorio no contiene Wrbycker Control Center ni Agent Lab. Los enlaces afiliados, cuando existan, deberán identificarse claramente.
+URL prevista:
+
+`https://jperezg93-cloud.github.io/wrbycker-universe/`
+
+Si GitHub Pages aún no está activo, en el repositorio selecciona **Settings → Pages → Deploy from a branch → main / (root) → Save**.
 
 ## Estado
 
-Repositorio creado; pendiente de cargar el prototipo web y activar GitHub Pages.
+- Base Material 3 clara: lista.
+- Navegación móvil inferior: lista.
+- Logo oficial `wb`: integrado.
+- Arquitectura para Characters & Stories y Skills & AI Worlds: lista.
+- Contenido masivo: se añadirá después del cierre estructural.
