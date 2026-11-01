@@ -1,0 +1,20 @@
+{
+  "name": "Wrbycker Universe",
+  "short_name": "Universe",
+  "description": "El espacio creativo de Wrbycker para personajes, historias, skills y experiencias de IA.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fbf9fd",
+  "theme_color": "#f7f5fb",
+  "lang": "es",
+  "id": "./wrbycker-universe",
+  "icons": [
+    {
+      "src": "assets/wb-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
