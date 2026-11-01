@@ -96,3 +96,6 @@ body{background:var(--m3-surface)}
   .section{padding:2rem 0}
   .bottom-nav{left:10px;right:10px;border-radius:30px;padding:8px}
 }
+
+.install-button{min-height:52px;padding:.85rem 1.25rem;border:0;border-radius:999px;background:#1e1b24;color:#fff;font:inherit;font-weight:750;cursor:pointer}
+.install-button[hidden]{display:none!important}
