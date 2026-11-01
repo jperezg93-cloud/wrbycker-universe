@@ -30,3 +30,8 @@ Si GitHub Pages aún no está activo, en el repositorio selecciona **Settings �
 - Logo oficial `wb`: integrado.
 - Arquitectura para Characters & Stories y Skills & AI Worlds: lista.
 - Contenido masivo: se añadirá después del cierre estructural.
+
+
+## Despliegue
+
+Pages habilitado mediante GitHub Actions para publicar desde `main`.
