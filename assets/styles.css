@@ -122,3 +122,26 @@ body{background:var(--m3-surface)}
   .feature-link:hover{background:#342b3d}
   .footer-home:hover{text-decoration:underline}
 }
+
+
+/* Mobile dock clearance — live-device fix */
+@media(max-width:759px){
+  html{scroll-padding-bottom:calc(108px + env(safe-area-inset-bottom,0px))}
+  main{padding-bottom:calc(132px + env(safe-area-inset-bottom,0px))}
+  .hero{
+    min-height:auto;
+    padding-top:1.2rem;
+    padding-bottom:calc(118px + env(safe-area-inset-bottom,0px));
+  }
+  .hero-actions{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:.7rem;
+  }
+  .hero-actions .install-button{
+    grid-column:1/-1;
+    width:100%;
+    justify-self:stretch;
+  }
+  .section,.compact,footer{scroll-margin-bottom:calc(110px + env(safe-area-inset-bottom,0px))}
+}
