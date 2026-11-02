@@ -1,5 +1,5 @@
 "use strict";
-const CACHE="wrbycker-universe-v3";
+const CACHE="wrbycker-universe-v4";
 const CORE=["./","./index.html","./assets/styles.css","./assets/app.js","./assets/wb-icon.svg","./manifest.webmanifest"];
 self.addEventListener("install",(event)=>{
   event.waitUntil(caches.open(CACHE).then((cache)=>cache.addAll(CORE)).then(()=>self.skipWaiting()));
