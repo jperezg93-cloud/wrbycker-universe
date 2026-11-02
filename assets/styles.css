@@ -47,10 +47,10 @@ h1 span{background:linear-gradient(90deg,#6f3df4,#8b75ff,#4fcbb4);-webkit-backgr
 .skills-card{background:linear-gradient(145deg,#fff1f8 0%,#f5efff 100%)}
 .skills-card::after{background:linear-gradient(145deg,#ffd7c8,#e4cfff)}
 .chips{display:flex;gap:.5rem;flex-wrap:wrap;position:relative;z-index:1}
-.chips span{padding:.55rem .85rem;border-radius:999px;background:rgba(255,255,255,.72);font-size:.8rem}
+.chips span,.chips a{padding:.55rem .85rem;border-radius:999px;background:rgba(255,255,255,.72);font-size:.8rem}
 .feature-bottom{display:flex;justify-content:space-between;align-items:end;gap:1rem;position:relative;z-index:1}
 .feature-bottom strong{font-size:1.15rem;max-width:15rem}
-.feature-bottom>span{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:#1f1b27;color:white;font-size:1.5rem}
+.feature-bottom>span,.feature-link{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:#1f1b27;color:white;font-size:1.5rem}
 .compact{padding-top:1rem}
 .statement-card{min-height:260px;background:var(--primary-container);box-shadow:none}
 .statement-card>span{color:#67558e}
@@ -99,3 +99,26 @@ body{background:var(--m3-surface)}
 
 .install-button{min-height:52px;padding:.85rem 1.25rem;border:0;border-radius:999px;background:#1e1b24;color:#fff;font:inherit;font-weight:750;cursor:pointer}
 .install-button[hidden]{display:none!important}
+
+
+/* Universe functional links */
+.platform-chips a,.feature-link,.footer-home{position:relative;z-index:2}
+.platform-chips a{transition:transform .16s ease,background-color .16s ease}
+.platform-chips a:active,.feature-link:active{transform:scale(.96)}
+.platform-chips a:focus-visible,.feature-link:focus-visible,.footer-home:focus-visible{
+  outline:3px solid rgba(111,61,244,.35);
+  outline-offset:3px;
+}
+.feature-link{transition:transform .16s ease,background-color .16s ease}
+.footer-home{
+  display:inline-block;
+  margin-top:.45rem;
+  color:#5f3dc4;
+  font-size:.78rem;
+  font-weight:800;
+}
+@media(hover:hover){
+  .platform-chips a:hover{background:#fff}
+  .feature-link:hover{background:#342b3d}
+  .footer-home:hover{text-decoration:underline}
+}
