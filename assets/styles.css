@@ -145,3 +145,60 @@ body{background:var(--m3-surface)}
   }
   .section,.compact,footer{scroll-margin-bottom:calc(110px + env(safe-area-inset-bottom,0px))}
 }
+
+
+/* Universe spotlight content */
+.spotlight-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:.75rem;
+  margin-top:.8rem;
+}
+.spotlight-card{
+  min-width:0;
+  padding:1.05rem;
+  border-radius:26px;
+  background:#fff;
+  color:var(--text);
+  display:flex;
+  flex-direction:column;
+  gap:.55rem;
+}
+.spotlight-kicker{
+  font-size:.63rem;
+  letter-spacing:.13em;
+  font-weight:850;
+  color:#6b6275;
+}
+.spotlight-card h3{
+  margin:0;
+  font-size:1.05rem;
+  line-height:1.08;
+  letter-spacing:-.02em;
+}
+.spotlight-card p{
+  margin:0;
+  color:var(--muted);
+  font-size:.82rem;
+  line-height:1.48;
+}
+.spotlight-link{transition:transform .16s ease,background-color .16s ease}
+.spotlight-link strong{
+  margin-top:auto;
+  padding-top:.25rem;
+  color:#5f3dc4;
+  font-size:.78rem;
+}
+.spotlight-link:focus-visible{outline:3px solid rgba(111,61,244,.35);outline-offset:3px}
+@media(hover:hover){.spotlight-link:hover{background:#f7f2ff;transform:translateY(-2px)}}
+@media(max-width:759px){
+  .spotlight-grid{
+    grid-template-columns:1fr;
+    gap:.65rem;
+  }
+  .spotlight-card{
+    border-radius:24px;
+    padding:1rem 1.05rem;
+  }
+  .creation-grid .spotlight-card{min-height:150px}
+}
