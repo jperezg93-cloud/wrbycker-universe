@@ -28,8 +28,9 @@ Si GitHub Pages aún no está activo, en el repositorio selecciona **Settings �
 - Base Material 3 clara: lista.
 - Navegación móvil inferior: lista.
 - Logo oficial `wb`: integrado.
-- Arquitectura para Characters & Stories y Skills & AI Worlds: lista.
-- Contenido masivo: se añadirá después del cierre estructural.
+- Characters & Stories: estructura y primeros personajes destacados listos.
+- Skills & AI Worlds: estructura y primeros contenidos destacados listos.
+- Contenido adicional: crecerá sobre esta base sin cambiar la arquitectura.
 
 
 ## Despliegue
